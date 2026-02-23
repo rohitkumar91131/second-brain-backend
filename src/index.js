@@ -33,7 +33,7 @@ app.use('/api/notes', noteRoutes);
 app.use('/api/resources', resourceRoutes);
 
 app.get('/', (req, res) => {
-    res.send('API is running...');
+    res.send('API is running....'); 
 });
 
 app.use(notFound);
