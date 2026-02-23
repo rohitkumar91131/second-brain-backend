@@ -1,17 +1,17 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import connectDB from './config/db.js';
-import { notFound, errorHandler } from './middleware/errorMiddleware.js';
+import connectDB from './src/config/db.js';
+import { notFound, errorHandler } from './src/middleware/errorMiddleware.js';
 
-import authRoutes from './routes/authRoutes.js';
-import userRoutes from './routes/userRoutes.js';
-import goalRoutes from './routes/goalRoutes.js';
-import taskRoutes from './routes/taskRoutes.js';
-import projectRoutes from './routes/projectRoutes.js';
-import journalRoutes from './routes/journalRoutes.js';
-import noteRoutes from './routes/noteRoutes.js';
-import resourceRoutes from './routes/resourceRoutes.js';
+import authRoutes from './src/routes/authRoutes.js';
+import userRoutes from './src/routes/userRoutes.js';
+import goalRoutes from './src/routes/goalRoutes.js';
+import taskRoutes from './src/routes/taskRoutes.js';
+import projectRoutes from './src/routes/projectRoutes.js';
+import journalRoutes from './src/routes/journalRoutes.js';
+import noteRoutes from './src/routes/noteRoutes.js';
+import resourceRoutes from './src/routes/resourceRoutes.js';
 
 dotenv.config();
 
